@@ -7,8 +7,8 @@
             rel="shortcut icon"
             href="./assets/favicon/favicon.svg"
             type="image/x-icon" />
-        <link rel="stylesheet" href="./styles/utilities.css" />
         <link rel="stylesheet" href="./styles/index.css" />
+        <link rel="stylesheet" href="./styles/utilities.css" />
         <script src="./scripts/index.js" defer></script>
         <title>SE Factory - Want to become a software engineer?</title>
     </head>
@@ -63,16 +63,61 @@
                     </div>
                 </div>
             </header>
-            <nav class="nav">
+            <div class="nav">
                 <a href="./index.html" class="logo">
                     <img src="./assets/images/SEF_logo.svg" alt="SEF Logo" />
                 </a>
-                <div class="humberger-menu">
+                <div id="nav-menu-open" class="humberger-menu">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </div>
-            </nav>
+            </div>
+            <div id="nav-menu" class="nav-menu d-none">
+                <div class="nav">
+                    <a href="./index.html" class="logo">
+                        <img
+                            src="./assets/images/SEF_logo.svg"
+                            alt="SEF Logo" />
+                    </a>
+                    <div id="nav-menu-close" class="humberger-menu">
+                        <span class="line right-rotate"></span>
+                        <span class="line left-rotate"></span>
+                    </div>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Hello World!</a>
+                    <a href="#" class="nav-link">Milestones</a>
+                    <a href="#" class="nav-link">Programs</a>
+                    <a href="#" class="nav-link">Hire Talent</a>
+                    <a href="#" class="nav-link">Testimonials</a>
+                    <a href="#" class="nav-link">FAQs</a>
+                    <a href="#" class="nav-link">Contact us</a>
+                    <a href="#" class="nav-link">Partners</a>
+                    <a href="#" class="nav-link">Newsletter</a>
+                </div>
+                <div class="account-login">
+                    <h2><span class="title-prefix">></span> Account</h2>
+                    <p class="account-description">
+                        /* Login with existing or create a new account in order
+                        to apply to SEF&nbsp;programs */
+                    </p>
+                    <button class="btn btn-login">LOG IN</button>
+                    <button class="btn btn-signup">SIGN UP</button>
+                </div>
+                <div class="hrf">
+                    <div class="hrf-img">
+                        <img
+                            src="./assets/images/HRF.svg"
+                            alt="HR Factory image" />
+                    </div>
+                    <p class="hrf-slogon">
+                        Globacl Companies, Meet Lebanese Talent
+                    </p>
+                    <p class="hrf-small">All You Need To Lunch a Local Team</p>
+                </div>
+            </div>
         </div>
     </body>
 </html>

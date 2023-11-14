@@ -38,7 +38,12 @@ img {
     height: 100%;
     object-fit: contain;
 }
-
+.d-none {
+    display: none;
+}
+.title-prefix {
+    color: var(--sef_primary);
+}
 @keyframes blink {
     50% {
         opacity: 0;

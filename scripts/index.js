@@ -38,3 +38,16 @@ const typeEffect = () => {
     }
 }
 typeEffect()
+
+// nav menu
+const nav_menu = document.getElementById("nav-menu")
+const nav_menu_open = document.getElementById("nav-menu-open")
+const nav_menu_close = document.getElementById("nav-menu-close")
+console.log(nav_menu_close)
+nav_menu_open.addEventListener("click", () => {
+    nav_menu.classList.toggle("d-none")
+})
+nav_menu_close.addEventListener("click", () => {
+    nav_menu.classList.toggle("d-none")
+    console.log("hi")
+})

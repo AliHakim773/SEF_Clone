@@ -126,10 +126,110 @@
     justify-content: center;
     gap: 5px;
     padding: 5px 8px;
+    cursor: pointer;
 }
 .line {
     background-color: var(--white);
     height: 3px;
     width: 100%;
+}
+.nav-menu {
+    position: fixed;
+    padding-inline: 24px;
+    inset: 0 0 0 0;
+    background-color: rgba(35, 35, 35, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: scroll;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+.left-rotate {
+    transform-origin: left;
+    transform: rotateZ(45deg) translateY(-10px) translateX(-5px);
+}
+.right-rotate {
+    transform-origin: right;
+    transform: rotateZ(-45deg) translateY(-5px) translateX(0px);
+}
+.nav-links {
+    margin-top: 120px;
+    padding-inline: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link {
+    height: 50px;
+    text-decoration: none;
+    color: var(--grey);
+    font-weight: 800;
+    font-size: 20px;
+    padding: 15px 20px;
+}
+.account-login {
+    background-color: var(--black);
+    width: 100%;
+    margin-top: 50px;
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.account-login h2 {
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 23px;
+}
+.account-description {
+    font-size: 12px;
+    margin-bottom: 24px;
+    color: var(--grey);
+}
+.account-login .btn {
+    cursor: pointer;
+    width: 100%;
+    height: 46px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: var(--black);
+    font-weight: 800;
+}
+.btn-login {
+    background-color: var(--sef_primary);
+}
+.btn-signup {
+    margin-top: 10px;
+}
+.hrf {
+    background-color: var(--hrf_primary);
+    width: 100%;
+    margin-top: 50px;
+    padding: 24px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.hrf-img {
+    height: 100px;
+}
+.hrf-slogon {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--white);
+    text-align: center;
+    margin-inline: 80px;
+}
+.hrf-small {
+    color: var(--white);
+    text-align: center;
+    font-size: 12px;
 }
 /* Nav-bar End */
