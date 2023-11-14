@@ -1,0 +1,36 @@
+:root {
+    --white: #fcfcfd;
+    --black: #363738;
+    --pink_primary: #fb508e;
+    --sef_primary: #28eea7;
+    --grey: #a5a6a9;
+    --black-2: #232323;
+    --daf_primary: #fb4747;
+    --background: #f1f2f3;
+    --ylw_primary: #ffc635;
+    --ppl_primary: #9864da;
+    --overlay-black: rgba(35, 35, 35, 0.9);
+    --light_grey: #dcdee1;
+    --hrf_primary: #31b7f0;
+    --overlay-green: rgba(40, 238, 167, 0.9);
+    --ghost-white: #ecedf3;
+    --purple-overlay: rgba(152, 100, 218, 0.9);
+}
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.page {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
