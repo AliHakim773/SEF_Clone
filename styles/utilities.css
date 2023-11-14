@@ -38,3 +38,9 @@ img {
     height: 100%;
     object-fit: contain;
 }
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
