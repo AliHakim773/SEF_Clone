@@ -1,15 +1,62 @@
 /* Header Start */
-.header {
-    padding-inline: 24px;
-}
 .nav {
-    margin-block: 36px;
+    position: absolute;
     height: 40px;
     display: flex;
     justify-content: space-between;
+    padding-inline: 24px;
+    top: 36px;
+    width: 100%;
 }
+.hero-section {
+    background-size: cover;
+    color: var(--white);
+}
+.hero-left-container {
+    padding-inline: 24px;
+    background-color: rgba(251, 80, 142, 0.93);
+    padding-block: 144px 60px;
+}
+.left {
+    text-align: right;
+    background-image: url("../assets/images/hero-left.png");
+}
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left .hero-title {
+    align-items: end;
+    font-weight: 800;
+}
+.hero-title-part-1 {
+    background-color: var(--black);
+    font-size: 18px;
+    padding-inline: 10px;
+}
+.hero-title-part-2 {
+    font-size: 24px;
+}
+.hero-description {
+    padding-block: 40px;
+    font-size: 14px;
+}
+.hero-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    font-weight: 800;
+    font-size: 14px;
+    padding: 15px 20px;
+}
+/* Header End */
+
+/* Nav-bar Start */
 .logo {
     height: 100%;
+    cursor: pointer;
 }
 .humberger-menu {
     background-color: var(--black);
@@ -28,4 +75,4 @@
     height: 3px;
     width: 100%;
 }
-/* Header End */
+/* Nav-bar End */
