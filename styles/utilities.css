@@ -41,6 +41,15 @@ img {
 .d-none {
     display: none !important;
 }
+.color-purple-primary {
+    color: var(--ppl_primary);
+}
+.color-yellow-primary {
+    color: var(--ylw_primary);
+}
+.color-pink-primary {
+    color: var(--pink_primary);
+}
 .color-primary {
     color: var(--sef_primary);
 }
@@ -53,6 +62,9 @@ img {
 .color-grey {
     color: var(--grey);
 }
+.color-light-grey {
+    color: var(--light-grey);
+}
 .bg-color-primary {
     background-color: var(--sef_primary);
 }
@@ -64,6 +76,9 @@ img {
 }
 .bg-color-grey {
     background-color: var(--grey);
+}
+.font-w-900 {
+    font-weight: 900;
 }
 section,
 .section-body {

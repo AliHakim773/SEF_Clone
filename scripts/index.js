@@ -51,3 +51,24 @@ nav_menu_close.addEventListener("click", () => {
     nav_menu.classList.toggle("d-none")
     console.log("hi")
 })
+
+// programs navigations
+const tabs = document.querySelectorAll(".programs-tabs a")
+const tabs_body = document.querySelectorAll(".program-tab-body")
+
+const removeClassFromArray = (arr, c, remove = true) => {
+    arr.forEach((e) => {
+        if (remove) e.classList.remove(c)
+        else e.classList.add(c)
+    })
+}
+
+tabs.forEach((e, i) => {
+    e.addEventListener("click", () => {
+        console.log("hi")
+        removeClassFromArray(tabs, "active")
+        removeClassFromArray(tabs_body, "d-none", false)
+        e.classList.add("active")
+        tabs_body[i].classList.remove("d-none")
+    })
+})
