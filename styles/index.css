@@ -359,6 +359,110 @@
 }
 /* Programs End */
 
+/* Hire Start */
+.hire-body,
+.hire-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.hire-body {
+    gap: 40px;
+}
+.hire-container {
+    gap: 20px;
+    border-radius: 20px;
+    padding: 24px;
+}
+.hire-title {
+    font-size: 18px;
+}
+.hire-stats {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.hire-info {
+    font-size: 14px;
+}
+.hire-btn {
+    background-color: var(--black);
+    font-size: 14px;
+    padding: 15px 20px;
+    text-align: end;
+}
+.hire-btn a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
+}
+.hire-local-team {
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Noto Sans", sans-serif;
+}
+.hire-list {
+    margin: 0 0 10px;
+    padding-left: 40px;
+    line-height: 1.5;
+}
+/* Hire End */
+
+/* Testimonials Start */
+.testimonials-container {
+    padding: 24px;
+    border-radius: 20px;
+    width: 100%;
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.testimonials-img,
+.testimonials-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+.testimonials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonials-profile {
+    display: flex;
+    gap: 20px;
+}
+.testimonials-profile-img,
+.testimonials-profile-img img {
+    width: 40px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.testimonials-quote {
+    font-size: 12px;
+}
+.testimonials-quote-img {
+    height: 30px;
+    align-self: flex-start;
+}
+.testimonials-profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.testimonials-profile-name {
+    font-size: 14px;
+}
+.testimonials-profile-title {
+    font-size: 10px;
+}
+/* Testimonials End */
+
 /* Media Query Medium Screen */
 @media only screen and (min-width: 480px) {
     /* Nav-bar Start */
@@ -416,6 +520,28 @@
         font-size: 14px;
     }
     /* Programs End */
+
+    /* Hire Start */
+    .hire-container {
+        padding: 40px;
+    }
+    .hire-title {
+        font-size: 22px;
+    }
+    .hire-stats {
+        padding: 15px 20px;
+    }
+    .hire-info {
+        font-size: 14px;
+    }
+    .hire-btn {
+        padding: 15px 20px;
+    }
+    .hire-local-team {
+        padding: 20px 40px;
+        font-size: 22px;
+    }
+    /* Hire End */
 }
 /* Media Query Large Screen */
 @media only screen and (min-width: 768px) {
@@ -523,4 +649,11 @@
         gap: 15px;
     }
     /* Programs End */
+
+    /* Hire Start */
+    .hire-local-team {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    /* Hire End */
 }
