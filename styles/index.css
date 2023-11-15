@@ -226,6 +226,23 @@
 }
 /* Nav-bar End */
 
+/* Hello World! Start */
+.hello-world {
+    background-color: var(--background);
+}
+.hello-world-video {
+    margin-top: 36px;
+    width: 100%;
+    aspect-ratio: 1.6;
+    border-radius: 20px;
+}
+.hello-world-video iframe {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+/* Hello World! End */
+
 /* Media Query Medium Screen */
 @media only screen and (min-width: 480px) {
     /* Nav-bar Start */
