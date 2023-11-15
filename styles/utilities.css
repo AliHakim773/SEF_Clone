@@ -39,7 +39,7 @@ img {
     object-fit: contain;
 }
 .d-none {
-    display: none;
+    display: none !important;
 }
 .title-prefix {
     color: var(--sef_primary);
