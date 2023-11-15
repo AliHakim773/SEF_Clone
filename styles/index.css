@@ -231,7 +231,6 @@
     background-color: var(--background);
 }
 .hello-world-video {
-    margin-top: 36px;
     width: 100%;
     aspect-ratio: 1.6;
     border-radius: 20px;
@@ -242,6 +241,42 @@
     padding: 10px;
 }
 /* Hello World! End */
+
+/* Milestones Start */
+.milestone-container,
+.milestone-row,
+.milestone-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.milestone-row {
+    flex-direction: row;
+}
+.milestone-card {
+    border-radius: 20px;
+    background-color: var(--background);
+    padding: 30px 20px;
+    flex: auto;
+}
+.milestone-row-big .milestone-card {
+    padding: 35px;
+}
+.milestone-row-big .milestone-card-stat {
+    font-size: 42px;
+}
+.milestone-card-stat {
+    font-size: 24px;
+    font-weight: 800;
+}
+.milestone-card-text {
+    font-size: 12px;
+}
+.milestone-card-title {
+    font-size: 14px;
+    font-weight: 800;
+}
+/* Milestones End */
 
 /* Media Query Medium Screen */
 @media only screen and (min-width: 480px) {
@@ -267,9 +302,48 @@
         font-size: 28px;
     }
     /* Header End */
+
+    /* Milestones Start */
+    .milestone-container {
+        gap: 20px;
+    }
+    .milestone-row-big .milestone-card {
+        padding: 30px 35px;
+    }
+    .milestone-row-big .milestone-card-stat {
+        font-size: 64px;
+    }
+    .milestone-card-stat {
+        font-size: 42px;
+    }
+    .milestone-card-text {
+        font-size: 14px;
+    }
+    .milestone-card-title {
+        font-size: 16px;
+    }
+    /* Milestones End */
+}
+/* Media Query Large Screen */
+@media only screen and (min-width: 768px) {
+    /* Milestones Start */
+    .milestone-card {
+        gap: 20px;
+        padding: 40px;
+    }
+    .milestone-row-big .milestone-card {
+        padding: 60px 70px;
+    }
+    .milestone-card-text {
+        font-size: 16px;
+    }
+    .milestone-row-big .milestone-card-text {
+        font-size: 14px;
+    }
+    /* Milestones End */
 }
 
-/* Media Query Large Screen */
+/* Media Query XLarge Screen */
 @media only screen and (min-width: 992px) {
     /* Nav-bar Start */
     .nav {
@@ -299,4 +373,25 @@
         font-size: 28px;
     }
     /* Header End */
+
+    /* Milestones Start */
+    .milestone-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+    }
+    .milestone-row-big {
+        grid-area: span 2 / span 1 / span 2 / span 1;
+    }
+    .milestone-card-stat {
+        font-size: 64px;
+    }
+    .milestone-row-big .milestone-card-stat {
+        font-size: 120px;
+    }
+    .milestone-card-title {
+        font-size: 32px;
+    }
+    /* Milestones End */
 }
