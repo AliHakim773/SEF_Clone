@@ -461,6 +461,47 @@
 .testimonials-profile-title {
     font-size: 10px;
 }
+/* carousel */
+.carousel {
+    position: relative;
+    min-height: 750px;
+    width: 100%;
+}
+.carousel-track-container {
+    height: 100%;
+    position: relative;
+}
+.carousel-track {
+    padding: 0;
+    min-height: 750px;
+    margin: 0;
+    list-style: none;
+}
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    min-height: 750px;
+    width: 100%;
+}
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 10px 0;
+}
+.carousel-indicator {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--grey);
+}
+.carousel-indicator.active {
+    background-color: var(--black-2);
+}
+.carousel-nav {
+    display: none;
+}
 /* Testimonials End */
 
 /* Media Query Medium Screen */
@@ -542,6 +583,19 @@
         font-size: 22px;
     }
     /* Hire End */
+
+    /* Testemonial Start */
+    .testimonials-container {
+        flex-direction: column-reverse;
+        gap: 40px;
+        min-height: 600px;
+    }
+    .carousel,
+    .carousel-track,
+    .carousel-slide {
+        min-height: 600px;
+    }
+    /* Testemonial End */
 }
 /* Media Query Large Screen */
 @media only screen and (min-width: 768px) {
@@ -583,6 +637,36 @@
         object-fit: cover;
     }
     /* Programs End */
+
+    /* Testemonial Start */
+    .testimonials-container {
+        flex-direction: row-reverse;
+        gap: 40px;
+        min-height: 400px;
+    }
+    .testimonials-img img {
+        height: 400px;
+        width: 200px;
+        object-fit: cover;
+    }
+    .testimonials-content {
+        justify-content: center;
+    }
+    .carousel,
+    .carousel-track,
+    .carousel-slide {
+        min-height: 400px;
+    }
+    .testimonials-quote {
+        font-size: 14px;
+    }
+    .testimonials-profile-name {
+        font-size: 18px;
+    }
+    .testimonials-profile-title {
+        font-size: 14px;
+    }
+    /* Testemonial End */
 }
 
 /* Media Query XLarge Screen */
@@ -656,4 +740,24 @@
         justify-content: flex-end;
     }
     /* Hire End */
+
+    /* Testemonial Start */
+    .testimonials-container {
+        min-height: 300px;
+        padding: 20px 20px 20px 64px;
+    }
+    .testimonials-img img {
+        width: 400px;
+    }
+    .testimonials-quote {
+        font-size: 16px;
+    }
+    .testimonials-quote-img {
+        height: 64px;
+    }
+    .carousel-nav {
+        display: flex;
+        margin-top: 100px;
+    }
+    /* Testemonial End */
 }
