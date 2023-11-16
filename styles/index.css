@@ -649,6 +649,21 @@
 }
 /* Contact Us End */
 
+/* Partners Start */
+.partners-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+.partner-img {
+    padding: 0 20px 30px;
+}
+.partner-img img {
+    height: 80px;
+}
+/* Partners End */
+
 /* Media Query Medium Screen */
 @media only screen and (min-width: 480px) {
     /* Nav-bar Start */
@@ -843,6 +858,13 @@
         width: 50%;
     }
     /* Contact Us End */
+
+    /* Partners Start */
+    .partners-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    /* Partners End */
 }
 
 /* Media Query XLarge Screen */
