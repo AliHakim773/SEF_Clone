@@ -128,3 +128,17 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block"
     dots[slideIndex - 1].className += " active"
 }
+
+// Accordion
+const accordionItems = document.querySelectorAll(".faq-item")
+const accordionContents = document.querySelectorAll(".faq-hidden")
+
+accordionItems.forEach((accordionItem, i) => {
+    accordionItem.addEventListener("click", () => {
+        const height = accordionContents[i].scrollHeight
+        accordionItem.classList.toggle("active")
+        if (accordionItem.classList.contains("active")) {
+            accordionContents[i].style.maxHeight = `${height}px`
+        } else accordionContents[i].style.maxHeight = `0px`
+    })
+})

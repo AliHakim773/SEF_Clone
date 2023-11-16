@@ -504,6 +504,56 @@
 }
 /* Testimonials End */
 
+/* FAQs Start */
+.faq-container {
+    width: 100%;
+}
+.faq-list,
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.faq-item {
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px 40px 0 24px;
+}
+.faq-toggle {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+}
+.faq-toggle::after {
+    content: ">";
+    transform: rotate(90deg);
+    color: var(--white);
+    position: absolute;
+    top: 25%;
+    right: 0;
+}
+.faq-item.active .faq-toggle::after {
+    transform: rotate(-90deg);
+}
+.faq-arrow {
+    margin-right: 10px;
+}
+.faq-hidden {
+    margin-block: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s ease max-height;
+    font-size: 14px;
+}
+.faq-answer ul {
+    margin: 20px;
+    list-style: disc;
+}
+/* FAQs End */
+
 /* Media Query Medium Screen */
 @media only screen and (min-width: 480px) {
     /* Nav-bar Start */
