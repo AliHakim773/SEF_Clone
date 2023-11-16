@@ -552,6 +552,17 @@
     margin: 20px;
     list-style: disc;
 }
+.faq-btn {
+    background-color: var(--black-2);
+    font-size: 14px;
+    padding: 15px 20px;
+    text-align: end;
+}
+.faq-btn a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--white);
+}
 /* FAQs End */
 
 /* Media Query Medium Screen */
@@ -646,6 +657,12 @@
         min-height: 600px;
     }
     /* Testemonial End */
+
+    /* FAQs Start */
+    .faq-btn {
+        padding: 15px 20px;
+    }
+    /* FAQs End */
 }
 /* Media Query Large Screen */
 @media only screen and (min-width: 768px) {
