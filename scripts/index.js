@@ -55,7 +55,11 @@ nav_menu_close.addEventListener("click", () => {
 // programs navigations
 const tabs = document.querySelectorAll(".programs-tabs a")
 const tabs_body = document.querySelectorAll(".program-tab-body")
+const programs = document.querySelector(".programs")
+const programs_bg_colors = ["#ffc635", "#28eea7", "#9864da", "#fb508e"]
 
+console.log(programs)
+console.log(programs.style.backgroundColor)
 const removeClassFromArray = (arr, c, remove = true) => {
     arr.forEach((e) => {
         if (remove) e.classList.remove(c)
@@ -65,7 +69,7 @@ const removeClassFromArray = (arr, c, remove = true) => {
 
 tabs.forEach((e, i) => {
     e.addEventListener("click", () => {
-        console.log("hi")
+        programs.style.backgroundColor = programs_bg_colors[i]
         removeClassFromArray(tabs, "active")
         removeClassFromArray(tabs_body, "d-none", false)
         e.classList.add("active")
