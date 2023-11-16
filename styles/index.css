@@ -621,7 +621,7 @@
     margin-right: 10px;
 }
 .contact-radio-options input {
-    background-color: var(--black);
+    color: var(--black);
 }
 .text-aria-label {
     margin-bottom: 5px;
@@ -747,6 +747,20 @@
         padding: 15px 20px;
     }
     /* FAQs End */
+
+    /* Contact Us Start */
+    .contact-label,
+    .contact-location-directions {
+        font-size: 14px;
+        color: var(--grey);
+    }
+    .contact-mail {
+        font-size: 22px;
+    }
+    .container {
+        padding: 30px 40px 40px;
+    }
+    /* Contact Us End */
 }
 /* Media Query Large Screen */
 @media only screen and (min-width: 768px) {
@@ -818,6 +832,17 @@
         font-size: 14px;
     }
     /* Testemonial End */
+
+    /* Contact Us Start */
+    .contact-form-item-pair {
+        display: flex;
+        gap: 10px;
+        width: 100%;
+    }
+    .contact-form-item-pair .contact-form-item {
+        width: 50%;
+    }
+    /* Contact Us End */
 }
 
 /* Media Query XLarge Screen */
@@ -911,4 +936,13 @@
         margin-top: 100px;
     }
     /* Testemonial End */
+
+    /* Contact Us Start */
+    .contact-us-container {
+        flex-direction: row-reverse;
+    }
+    .contact-directions {
+        width: fit-content;
+    }
+    /* Contact Us End */
 }
