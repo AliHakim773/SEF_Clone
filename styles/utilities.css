@@ -69,6 +69,12 @@ img {
 .bg-color-primary {
     background-color: var(--sef_primary);
 }
+.bg-color-purple-primary {
+    background-color: var(--ppl_primary);
+}
+.bg-color-pink-primary {
+    background-color: var(--pink_primary);
+}
 .bg-color-black {
     background-color: var(--black);
 }

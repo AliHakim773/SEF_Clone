@@ -6,7 +6,7 @@ const words = ["Sofware Engineer?", "Data Engineer?", "UI/UX Designer"]
 const bg_colors = ["#00eea7ed", "#9864daed", "#fb508eed"]
 
 let word_index = 0
-let char_index = 2
+let char_index = 1
 let is_deleting = false
 
 const typeEffect = () => {
@@ -34,7 +34,7 @@ const typeEffect = () => {
         is_deleting = !is_deleting
         dynamic_text.classList.remove("stop-blinking")
         word_index = !is_deleting ? (word_index + 1) % words.length : word_index
-        setTimeout(typeEffect, 1000)
+        setTimeout(typeEffect, 1500)
     }
 }
 typeEffect()

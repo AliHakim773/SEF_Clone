@@ -278,6 +278,74 @@
 }
 /* Milestones End */
 
+/* Hiring Portals Start */
+.hiring-portals-container {
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hiring-portal-item-wrapper {
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/images/FSW-img.png);
+    background-size: contain;
+    border: 10px solid var(--sef_primary);
+    border-radius: 20px;
+}
+.hiring-portal-fsd.hiring-portal-item-wrapper {
+    border-color: var(--ppl_primary);
+    background-image: url(../assets/images/FSD-img.png);
+}
+.hiring-portal-uix.hiring-portal-item-wrapper {
+    border-color: var(--pink_primary);
+    background-image: url(../assets/images/UIX-img.png);
+}
+.hiring-portal-item {
+    background-color: var(--overlay-black);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hiring-portal-title-1 {
+    font-weight: 900;
+    font-size: 13px;
+}
+.hiring-portal-title-2 {
+    font-weight: 900;
+    font-size: 30px;
+}
+.hiring-portal-positions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.hiring-portal-position {
+    font-weight: 900;
+    font-size: 13px;
+    border-radius: 10px;
+    padding: 3px 6px;
+}
+.hire-portal-btn {
+    margin-top: 10px;
+    background-color: var(--white);
+    font-size: 16px;
+    padding: 9px 15px;
+    text-align: end;
+    font-weight: 900;
+}
+.hire-portal-btn a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+}
+/* Hiring Portals End */
+
 /* Programs Start */
 .programs-container {
     width: 100%;
@@ -835,6 +903,12 @@
         font-size: 16px;
     }
     /* Milestones End */
+
+    /* Hiring Portals Start */
+    .hiring-portals {
+        display: none;
+    }
+    /* Hiring Portals End */
 
     /* Programs Start */
     .programs-tabs a {
