@@ -1001,6 +1001,13 @@
 }
 /* Media Query Large Screen */
 @media only screen and (min-width: 768px) {
+    /* Nav Start */
+    .nav-menu {
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+    /* Nav End */
     /* Milestones Start */
     .milestone-card {
         gap: 20px;
